@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Servicios - Roller Speed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div th:replace="~{navbar :: nav}"></div>
+    <div class="container">
+        <h2>Servicios Ofrecidos</h2>
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <div class="card p-3 shadow-sm">
+                    <h4>Principiantes</h4>
+                    <p>Iniciación en el patinaje, equilibrio y postura básica.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 shadow-sm">
+                    <h4>Intermedio</h4>
+                    <p>Técnica de técnica de empuje, giros y velocidad sostenida.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3 shadow-sm">
+                    <h4>Alto Rendimiento</h4>
+                    <p>Preparación para competencias locales y nacionales.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
