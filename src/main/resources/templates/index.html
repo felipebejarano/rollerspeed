@@ -1,33 +1,51 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Roller Speed - Inicio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roller Speed - Escuela de Patinaje</title>
+    <!-- CSS de Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <!-- Barra de navegación directa para evitar bloqueos de fragmento -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
-      <div class="container-fluid">
-        <a class="navbar-brand fw-bold text-warning" href="/">Roller Speed</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item"><a class="nav-link" href="/mision">Misión</a></li>
-            <li class="nav-item"><a class="nav-link" href="/vision">Visión</a></li>
-            <li class="nav-item"><a class="nav-link" href="/valores">Valores</a></li>
-            <li class="nav-item"><a class="nav-link" href="/servicios">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link" href="/eventos">Eventos</a></li>
-          </ul>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">Roller Speed</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="btn btn-primary ms-2" href="/registro">Inscribirse</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-    
-    <div class="container text-center mt-5">
-        <h1 class="display-4 text-primary fw-bold">Escuela de Patinaje Roller Speed</h1>
-        <p class="lead">Formando campeones sobre ruedas en Santa Marta, Colombia.</p>
+
+    <!-- Contenido Principal -->
+    <div class="container mt-5">
+        <div class="p-5 mb-4 bg-light rounded-3 shadow-sm text-center">
+            <h1 class="display-5 fw-bold">Bienvenido a Roller Speed</h1>
+            <p class="fs-4">Formando campeones del patinaje en Santa Marta, Colombia.</p>
+            <a class="btn btn-primary btn-lg" href="/registro" role="button">Regístrate Ahora</a>
+        </div>
+
+        <div class="row text-center mt-5">
+            <div class="col-md-4">
+                <h3>Misión</h3>
+                <p>Promover la práctica del patinaje como disciplina deportiva integradora y de alto rendimiento.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Visión</h3>
+                <p>Ser reconocidos a nivel nacional como la escuela líder en desarrollo técnico e integral.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Valores</h3>
+                <p>Disciplina, perseverancia, trabajo en equipo y respeto.</p>
+            </div>
+        </div>
     </div>
+
 </body>
 </html>

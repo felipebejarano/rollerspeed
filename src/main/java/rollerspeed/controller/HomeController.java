@@ -2,9 +2,10 @@
 package rollerspeed.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-
+import java.util.List;
 @Controller
 public class HomeController {
 
@@ -12,6 +13,19 @@ public class HomeController {
     @GetMapping("/")
     public String index() {
         return "index"; // Retorna el archivo index.html en templates
+    }
+    @GetMapping("/servicios")
+    public String servicios(Model model) {
+        // Creamos una lista de servicios para enviarla dinámicamente a la vista
+        List<String> listaServicios = List.of(
+            "Entrenamiento para principiantes",
+            "Preparación para competencias",
+            "Clases Recreativas de Patinaje",
+            "Acondicionamiento Físico Especializado"
+        );
+        // Agregamos la lista al modelo de Thymeleaf
+        model.addAttribute("servicios", listaServicios);
+        return "servicios"; // Retorna la plantilla servicios.html
     }
 
     // Maneja de Misión
@@ -32,13 +46,7 @@ public class HomeController {
         return "valores"; // Retorna valores.html
     }
 
-    // Maneja  de Servicios
-    @GetMapping("/servicios")
-    public String servicios() {
-        return "servicios"; // Retorna servicios.html
-    }
-
-    // Maneja de Eventos
+       // Maneja de Eventos
     @GetMapping("/eventos")
     public String eventos() {
         return "eventos"; // Retorna eventos.html
