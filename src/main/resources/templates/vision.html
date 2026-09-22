@@ -6,10 +6,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div th:replace="~{navbar :: nav}"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-warning" href="/">Roller Speed</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link" href="/mision">Misión</a></li>
+            <li class="nav-item"><a class="nav-link" href="/vision">Visión</a></li>
+            <li class="nav-item"><a class="nav-link" href="/valores">Valores</a></li>
+            <li class="nav-item"><a class="nav-link" href="/servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="/eventos">Eventos</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="container">
         <h2>Nuestra Visión</h2>
-        <p class="fs-5">Ser reconocidos a nivel departamental y nacional como la escuela líder en el desarrollo deportivo de alto rendimiento en el patinaje de velocidad.</p>
+        <p class="fs-5">Ser reconocidos a nivel departamental y nacional como la escuela líder en el desarrollo deportivo de alto rendimiento.</p>
     </div>
 </body>
 </html>

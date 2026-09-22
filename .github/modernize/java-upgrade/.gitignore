@@ -1,0 +1,12 @@
+# Carpetas de compilación de Maven
+target/
+
+# Archivos de configuración de IDEs (VS Code y Eclipse)
+.vscode/
+.settings/
+.project
+.classpath
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db
